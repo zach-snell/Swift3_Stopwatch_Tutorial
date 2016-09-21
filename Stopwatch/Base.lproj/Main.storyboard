@@ -23,14 +23,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42M-9O-CvY">
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="stopWatchToggleTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fum-94-ppU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ER2-AR-0Rg" secondAttribute="trailing" constant="20" id="3nX-6c-bbP"/>
+                            <constraint firstItem="42M-9O-CvY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TT5-sa-Wfs"/>
+                            <constraint firstItem="42M-9O-CvY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WP6-YH-E1y"/>
                             <constraint firstItem="ER2-AR-0Rg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="duH-Wf-7jY"/>
                             <constraint firstItem="ER2-AR-0Rg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="gOQ-9R-5pJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stopWatchDisplay" destination="ER2-AR-0Rg" id="2JV-uo-YeX"/>
+                        <outlet property="stopWatchToggleButton" destination="42M-9O-CvY" id="BLQ-Ti-afQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
